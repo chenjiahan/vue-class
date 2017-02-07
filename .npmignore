@@ -4,3 +4,4 @@ yarn.lock
 .npmignore
 tsconfig.json
 *.log
+src

@@ -1,10 +1,11 @@
 {
   "name": "vue-class",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "vue class decorator",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "lib": "tsc src/index.ts --outDir lib"
+    "lib": "tsc src/index.ts --outDir lib -d"
   },
   "repository": {
     "type": "git",
