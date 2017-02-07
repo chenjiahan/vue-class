@@ -1,6 +1,6 @@
 {
   "name": "vue-class",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vue class decorator",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/chenjiahan/vue-class#readme",
   "dependencies": {
-    "vue-class-component": "^4.4.0"
+    "vue-class-component": "^4.4.0",
+    "vue-template-loader": "^0.2.2"
   },
   "devDependencies": {
     "typescript": "^2.1.5",
