@@ -14,7 +14,7 @@ export default function <U extends Vue>(options: VueClassOptions<U>): <V extends
     component = ClassDecorator(options)(component)
 
     // add render function
-    if (options.template) {
+    if (typeof options.template === 'function') {
       component = options.template(component)
     }
 
