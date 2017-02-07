@@ -1,3 +1,5 @@
 .gitignore
 .DS_STORE
 yarn.lock
+.npmignore
+tsconfig.json
