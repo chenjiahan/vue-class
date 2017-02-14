@@ -9,7 +9,7 @@ npm i vue-class --save
 ## Usage
 app.ts
 ``` typescript
-import vue = require('vue');
+import Vue = require('vue');
 import template from './app.html';
 import { Component, Prop, Watch } from 'vue-class';
 
