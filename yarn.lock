@@ -91,9 +91,9 @@ supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-typescript@^2.1.5:
-  version "2.1.5"
-  resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
+typescript@^2.1.6:
+  version "2.1.6"
+  resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
 
 uniq@^1.0.1:
   version "1.0.1"

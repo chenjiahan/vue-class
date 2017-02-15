@@ -11,7 +11,7 @@ app.ts
 ``` typescript
 import Vue = require('vue');
 import template from './app.html';
-import { Component, Prop, Watch } from 'vue-class';
+import { Component, Watch } from 'vue-class';
 
 @Component({
    name: 'app',
@@ -20,13 +20,10 @@ import { Component, Prop, Watch } from 'vue-class';
 export default class App extends Vue {
    public name: string;
    public value: number;
-   
-   @Prop({{ default: 'hello world' })
-   public message;
-   
+
    @Watch('value')
-   onValueChange(): void {
-      console.log(this.value);
+   public onValueChange(value): void {
+      console.log(value);
    }
 }
 ```

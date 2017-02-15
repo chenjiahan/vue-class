@@ -1,13 +1,18 @@
 {
     "compilerOptions": {
-        "target": "ES5",
-        "module": "commonjs",
-        "removeComments": false,
-        "preserveConstEnums": true,
-        "sourceMap": false,
-        "experimentalDecorators": true
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "outDir": "lib",
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "suppressImplicitAnyIndexErrors": true
     },
-    "exclude": [
-        "node_modules"
-    ]
+    "include": [
+        "./src/*.ts"
+    ],
+    "compileOnSave": false
 }
