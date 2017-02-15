@@ -12,7 +12,7 @@ export type VueClass = { new (): Vue } & typeof Vue;
 
 // Component Decorator
 export const Component = <U extends Vue>(options: VueClassOptions<U>): <V extends VueClass>(component: V) => V => {
-    return function (component: VueClass): VueClass {
+    return (component: VueClass): VueClass => {
         component = ClassDecorator(options)(component);
 
         if (typeof options.template === 'function') {
