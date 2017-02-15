@@ -8,5 +8,6 @@ export interface WatchOptions extends Vue.WatchOptions {
 export declare type VueClass = {
     new (): Vue;
 } & typeof Vue;
-export declare const Component: <U extends Vue>(options: VueClassOptions<U>) => <V extends VueClass>(component: V) => V;
-export declare const Watch: (path: string, options?: WatchOptions) => MethodDecorator;
+declare const Component: <U extends Vue>(options: VueClassOptions<U>) => <V extends VueClass>(component: V) => V;
+declare const Watch: (path: string, options?: WatchOptions) => MethodDecorator;
+export { Vue, Component, Watch };

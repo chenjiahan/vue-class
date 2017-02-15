@@ -1,6 +1,6 @@
 {
   "name": "vue-class",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "vue class decorator",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
