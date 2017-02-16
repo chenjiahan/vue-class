@@ -31,12 +31,19 @@ const Component = <U extends Vue>(options: VueClassOptions<U>): <V extends VueCl
 };
 
 // Watch Decorator
-const Watch = (path: string, options: WatchOptions = {}): MethodDecorator => {
-    const { deep, immediate } = options;
-    return createDecorator((componentOptions: Vue.ComponentOptions<Vue>, handler: string): void => {
-        componentOptions.watch = componentOptions.watch || {};
-        (<any>componentOptions.watch)[path] = { handler, deep, immediate };
+const Watch = (path: string, watchOptions: WatchOptions = {}): MethodDecorator => {
+    const { deep, immediate } = watchOptions;
+    return createDecorator((options: Vue.ComponentOptions<Vue>, handler: string): void => {
+        options.watch = options.watch || {};
+        (<any>options.watch)[path] = { handler, deep, immediate };
     });
 };
 
-export { Vue, Component, Watch };
+// Computed Decorator
+const Computed = createDecorator((options: Vue.ComponentOptions<Vue>, key: string): void => {
+    options.computed = options.computed || {};
+    options.computed[key] = options.methods[key];
+    delete options.methods[key];
+});
+
+export { Vue, Component, Watch, Computed };

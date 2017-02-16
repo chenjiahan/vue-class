@@ -9,5 +9,6 @@ export declare type VueClass = {
     new (): Vue;
 } & typeof Vue;
 declare const Component: <U extends Vue>(options: VueClassOptions<U>) => <V extends VueClass>(component: V) => V;
-declare const Watch: (path: string, options?: WatchOptions) => MethodDecorator;
-export { Vue, Component, Watch };
+declare const Watch: (path: string, watchOptions?: WatchOptions) => MethodDecorator;
+declare const Computed: (target: Vue, key: string) => void;
+export { Vue, Component, Watch, Computed };

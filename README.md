@@ -9,21 +9,25 @@ npm i vue-class --save
 ## Usage
 app.ts
 ``` typescript
-import Vue = require('vue');
 import template from './app.html';
-import { Component, Watch } from 'vue-class';
+import { Vue, Component, Watch, Computed } from 'vue-class';
 
 @Component({
    name: 'app',
    template,
 })
 export default class App extends Vue {
-   public name: string;
-   public value: number;
+   private name: string;
+   private value: number;
 
    @Watch('value')
-   public onValueChange(value): void {
+   private onValueChange(value): void {
       console.log(value);
+   }
+
+   @Computed
+   private computedValue(): number {
+       return this.number + 1;
    }
 }
 ```
