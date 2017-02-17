@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "es2015",
+        "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "lib",
         "isolatedModules": false,
@@ -9,7 +9,10 @@
         "declaration": true,
         "noImplicitAny": true,
         "removeComments": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "types": [
+            "core-js"
+        ]
     },
     "include": [
         "./src/*.ts"

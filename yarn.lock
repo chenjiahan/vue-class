@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/core-js@^0.9.35":
+  version "0.9.35"
+  resolved "http://r.npm.sankuai.com/@types/core-js/download/@types/core-js-0.9.35.tgz#444064e63711cdcc62ea844d27642f6efc2285f2"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "http://r.npm.sankuai.com/ansi-regex/download/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
