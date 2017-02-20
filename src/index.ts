@@ -3,7 +3,6 @@ import ClassDecorator, { createDecorator } from 'vue-class-component';
 
 export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V> {
     name?: string;
-    template?: any;
 }
 
 // hack for tsc
@@ -15,10 +14,6 @@ export type VueClass = { new (): Vue } & typeof Vue;
 const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueClass>(component: V) => V => {
     return (component: VueClass): VueClass => {
         component = ClassDecorator(options)(component);
-
-        if (typeof options.template === 'function') {
-            component = options.template(component);
-        }
 
         if (options.name) {
             Object.defineProperty(component, 'name', {
