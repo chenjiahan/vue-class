@@ -6,131 +6,39 @@
   version "0.9.35"
   resolved "http://r.npm.sankuai.com/@types/core-js/download/@types/core-js-0.9.35.tgz#444064e63711cdcc62ea844d27642f6efc2285f2"
 
-ansi-regex@^2.0.0:
-  version "2.1.1"
-  resolved "http://r.npm.sankuai.com/ansi-regex/download/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
-
-ansi-styles@^2.2.1:
-  version "2.2.1"
-  resolved "http://r.npm.sankuai.com/ansi-styles/download/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
-
-chalk@^1.1.3:
-  version "1.1.3"
-  resolved "http://r.npm.sankuai.com/chalk/download/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98"
-  dependencies:
-    ansi-styles "^2.2.1"
-    escape-string-regexp "^1.0.2"
-    has-ansi "^2.0.0"
-    strip-ansi "^3.0.0"
-    supports-color "^2.0.0"
-
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "http://r.npm.sankuai.com/de-indent/download/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
-
-escape-string-regexp@^1.0.2:
-  version "1.0.5"
-  resolved "http://r.npm.sankuai.com/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
-
-flatten@^1.0.2:
-  version "1.0.2"
-  resolved "http://r.npm.sankuai.com/flatten/download/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
-
-has-ansi@^2.0.0:
-  version "2.0.0"
-  resolved "http://r.npm.sankuai.com/has-ansi/download/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
-  dependencies:
-    ansi-regex "^2.0.0"
-
-has-flag@^1.0.0:
-  version "1.0.0"
-  resolved "http://r.npm.sankuai.com/has-flag/download/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
 
 he@^1.1.0:
   version "1.1.1"
   resolved "http://r.npm.sankuai.com/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-indexes-of@^1.0.1:
-  version "1.0.1"
-  resolved "http://r.npm.sankuai.com/indexes-of/download/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
-
-js-base64@^2.1.9:
-  version "2.1.9"
-  resolved "http://r.npm.sankuai.com/js-base64/download/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
-
-postcss-selector-parser@^2.2.2:
-  version "2.2.2"
-  resolved "http://r.npm.sankuai.com/postcss-selector-parser/download/postcss-selector-parser-2.2.2.tgz#3d70f5adda130da51c7c0c2fc023f56b1374fe08"
-  dependencies:
-    flatten "^1.0.2"
-    indexes-of "^1.0.1"
-    uniq "^1.0.1"
-
-postcss@^5.2.8:
-  version "5.2.12"
-  resolved "http://r.npm.sankuai.com/postcss/download/postcss-5.2.12.tgz#6a2b15e35dd65634441bb0961fa796904c7890e0"
-  dependencies:
-    chalk "^1.1.3"
-    js-base64 "^2.1.9"
-    source-map "^0.5.6"
-    supports-color "^3.2.3"
-
-source-map@^0.5.6:
-  version "0.5.6"
-  resolved "http://r.npm.sankuai.com/source-map/download/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
-
-strip-ansi@^3.0.0:
-  version "3.0.1"
-  resolved "http://r.npm.sankuai.com/strip-ansi/download/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
-  dependencies:
-    ansi-regex "^2.0.0"
-
-supports-color@^2.0.0:
-  version "2.0.0"
-  resolved "http://r.npm.sankuai.com/supports-color/download/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
-
-supports-color@^3.2.3:
-  version "3.2.3"
-  resolved "http://r.npm.sankuai.com/supports-color/download/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
-  dependencies:
-    has-flag "^1.0.0"
-
 typescript@^2.1.6:
   version "2.1.6"
   resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
-
-uniq@^1.0.1:
-  version "1.0.1"
-  resolved "http://r.npm.sankuai.com/uniq/download/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
 
 vue-class-component@^4.4.0:
   version "4.4.0"
   resolved "http://r.npm.sankuai.com/vue-class-component/download/vue-class-component-4.4.0.tgz#cf6081475294eb7236bdf7cf75016803d4d98537"
 
-vue-hot-reload-api@^2.0.6:
-  version "2.0.8"
-  resolved "http://r.npm.sankuai.com/vue-hot-reload-api/download/vue-hot-reload-api-2.0.8.tgz#b3ba6a9a443d561b14f2785c8ea056618cb2faa3"
+vue-render-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/vue-render-loader/-/vue-render-loader-1.0.0.tgz#67b35439fc9b81aef9eeae978db1da6a31d6b567"
+  dependencies:
+    vue-template-compiler "^2.1.10"
+    vue-template-es2015-compiler "^1.5.0"
 
-vue-template-compiler@^2.1.8:
+vue-template-compiler@^2.1.10:
   version "2.1.10"
-  resolved "http://r.npm.sankuai.com/vue-template-compiler/download/vue-template-compiler-2.1.10.tgz#cb89643adc395e97435585522e43d0a9b1913257"
+  resolved "https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.1.10.tgz#cb89643adc395e97435585522e43d0a9b1913257"
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
 
-vue-template-es2015-compiler@^1.4.2:
+vue-template-es2015-compiler@^1.5.0:
   version "1.5.0"
-  resolved "http://r.npm.sankuai.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.5.0.tgz#e4f672ab1718a3abf9171a080daefac31be117e1"
-
-vue-template-loader@^0.2.2:
-  version "0.2.2"
-  resolved "http://r.npm.sankuai.com/vue-template-loader/download/vue-template-loader-0.2.2.tgz#b2567c4fb802de8f2ff716fe8cca7cdba9136b9a"
-  dependencies:
-    postcss "^5.2.8"
-    postcss-selector-parser "^2.2.2"
-    vue-hot-reload-api "^2.0.6"
-    vue-template-compiler "^2.1.8"
-    vue-template-es2015-compiler "^1.4.2"
+  resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.0.tgz#e4f672ab1718a3abf9171a080daefac31be117e1"
 
 vue@^2.1.10:
   version "2.1.10"

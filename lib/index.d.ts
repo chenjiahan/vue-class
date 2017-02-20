@@ -1,7 +1,7 @@
 import * as Vue from 'vue';
 export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V> {
     name?: string;
-    template?: any;
+    render?: any;
 }
 export interface WatchOptions extends Vue.WatchOptions {
 }
