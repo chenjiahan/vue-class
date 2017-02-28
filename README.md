@@ -17,12 +17,11 @@ import { Vue, Component, Watch } from 'vue-class';
    name: 'app',
    props: ['value']
 })
-export default class App extends Vue {
-   private name: string;
-   private value: number;
+class App extends Vue {
+   value: number;
 
    @Watch('value')
-   private onValueChange(value: number): void {
+   onValueChange(value: number): void {
       console.log(value);
    }
 }
