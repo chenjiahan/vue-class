@@ -1,4 +1,4 @@
-import * as Vue from 'vue';
+import Vue from 'vue';
 export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V> {
     name?: string;
     render?: any;

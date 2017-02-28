@@ -1,11 +1,12 @@
 {
   "name": "vue-class",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue class decorator",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "lib": "tsc -p tsconfig.json"
+    "lib": "tsc -p tsconfig.json",
+    "release": "npm run lib && npm publish"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,11 @@
   },
   "homepage": "https://github.com/chenjiahan/vue-class#readme",
   "dependencies": {
-    "vue": "^2.1.10",
-    "vue-class-component": "^4.4.0",
-    "vue-render-loader": "^1.0.0"
+    "vue": "^2.2.1",
+    "vue-class-component": "^5.0.0",
+    "vue-render-loader": "^1.0.1"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
-    "typescript": "^2.1.6"
+    "typescript": "^2.2.1"
   }
 }

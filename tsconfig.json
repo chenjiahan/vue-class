@@ -10,9 +10,7 @@
         "noImplicitAny": true,
         "removeComments": true,
         "suppressImplicitAnyIndexErrors": true,
-        "types": [
-            "core-js"
-        ]
+        "allowSyntheticDefaultImports": true
     },
     "include": [
         "./src/*.ts"
