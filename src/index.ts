@@ -19,16 +19,7 @@ const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueC
             options.render = obj.render;
             options.staticRenderFns = obj.staticRenderFns;
         }
-
-        component = ClassDecorator(options)(component);
-
-        if (options.name) {
-            Object.defineProperty(component, 'name', {
-                value: options.name
-            });
-        }
-
-        return component;
+        return ClassDecorator(options)(component);
     };
 };
 
