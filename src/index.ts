@@ -7,9 +7,15 @@ export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V>
 }
 
 // hack for tsc
-export interface WatchOptions extends Vue.WatchOptions {}
+export interface WatchOptions extends Vue.WatchOptions { }
 
 export type VueClass = { new (): Vue } & typeof Vue;
+
+// register hooks
+ClassDecorator.registerHooks([
+    'beforeRouteEnter',
+    'beforeRouteLeave'
+])
 
 // Component Decorator
 const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueClass>(component: V) => V => {
