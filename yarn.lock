@@ -10,17 +10,17 @@ he@^1.1.0:
   version "1.1.1"
   resolved "http://r.npm.sankuai.com/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-typescript@^2.2.1:
-  version "2.2.1"
-  resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.2.1.tgz#4862b662b988a4c8ff691cc7969622d24db76ae9"
+typescript@^2.2.2:
+  version "2.2.2"
+  resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.2.2.tgz#606022508479b55ffa368b58fee963a03dfd7b0c"
 
-vue-class-component@^5.0.0:
-  version "5.0.0"
-  resolved "http://r.npm.sankuai.com/vue-class-component/download/vue-class-component-5.0.0.tgz#6cc52502fa40a05100ffc4cf2dfa3a3f849b8e0b"
+vue-class-component@^5.0.1:
+  version "5.0.1"
+  resolved "http://r.npm.sankuai.com/vue-class-component/download/vue-class-component-5.0.1.tgz#feda06c3da266cee9064e224ba491e089923dce8"
 
-vue-render-loader@^1.0.1:
-  version "1.0.1"
-  resolved "http://r.npm.sankuai.com/vue-render-loader/download/vue-render-loader-1.0.1.tgz#9b752949e7d0005ae7f23cd0f91f6a8728c36e90"
+vue-render-loader@^1.1.1:
+  version "1.1.1"
+  resolved "http://r.npm.sankuai.com/vue-render-loader/download/vue-render-loader-1.1.1.tgz#b3f0d2d94df69fd9b83afd24408ce028a265a1b1"
   dependencies:
     vue-template-compiler "*"
     vue-template-es2015-compiler "*"
@@ -36,6 +36,6 @@ vue-template-es2015-compiler@*:
   version "1.5.1"
   resolved "http://r.npm.sankuai.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.5.1.tgz#0c36cc57aa3a9ec13e846342cb14a72fcac8bd93"
 
-vue@^2.2.1:
-  version "2.2.1"
-  resolved "http://r.npm.sankuai.com/vue/download/vue-2.2.1.tgz#ddbfd2f0caf38f374f5a36eea2e1edf25225b68e"
+vue@^2.2.6:
+  version "2.2.6"
+  resolved "http://r.npm.sankuai.com/vue/download/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
