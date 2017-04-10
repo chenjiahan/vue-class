@@ -25,7 +25,11 @@ const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueC
             options.render = obj.render;
             options.staticRenderFns = obj.staticRenderFns;
         }
-        return ClassDecorator(options)(component);
+        component = ClassDecorator(options)(component);
+        (<any>component).install = function () {
+            Vue.component(options.name, this);
+        }
+        return component;
     };
 };
 
