@@ -11,24 +11,27 @@ export interface WatchOptions extends Vue.WatchOptions { }
 
 export type VueClass = { new (): Vue } & typeof Vue;
 
-// register hooks
+// register vue-router hooks
 ClassDecorator.registerHooks([
     'beforeRouteEnter',
     'beforeRouteLeave'
-])
+]);
 
 // Component Decorator
 const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueClass>(component: V) => V => {
     return (component: VueClass): VueClass => {
-        if (typeof options.render === 'object') {
-            const obj = options.render;
-            options.render = obj.render;
-            options.staticRenderFns = obj.staticRenderFns;
+        const { render } = options;
+        if (typeof render === 'object') {
+            options.render = render.render;
+            options.staticRenderFns = render.staticRenderFns;
         }
+
         component = ClassDecorator(options)(component);
+
         (<any>component).install = function () {
             Vue.component(options.name, this);
         }
+
         return component;
     };
 };
