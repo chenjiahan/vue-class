@@ -1,9 +1,14 @@
 # Vue Class
-Vue class decorator for typescript.
+Decorator for building Vue2 & TypeScript2 Component.
 
 ## Install
+npm
 ```
 npm i vue-class --save
+```
+yarn
+```
+yarn add vue-class
 ```
 
 ## Usage
@@ -29,3 +34,4 @@ class App extends Vue {
 
 ## Dependences
 - [vue-class-component](https://github.com/vuejs/vue-class-component)
+- [vue-render-loader](https://github.com/chenjiahan/vue-render-loader)
