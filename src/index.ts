@@ -1,15 +1,6 @@
 import Vue from 'vue';
 import ClassDecorator, { createDecorator } from 'vue-class-component';
-
-export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V> {
-    name?: string;
-    render?: any;
-}
-
-// hack for tsc
-export interface WatchOptions extends Vue.WatchOptions { }
-
-export type VueClass = { new (): Vue } & typeof Vue;
+import { VueClass, WatchOptions, ComponentOptions } from './declare';
 
 // register vue-router hooks
 ClassDecorator.registerHooks([
@@ -46,3 +37,4 @@ const Watch = (path: string, watchOptions: WatchOptions = {}): MethodDecorator =
 };
 
 export { Vue, Component, Watch };
+export * from './prerender';
