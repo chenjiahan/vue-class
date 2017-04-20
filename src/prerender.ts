@@ -1,14 +1,15 @@
 // Preredner Decorator
-export const mountedDispatcher = () => {
+const createMounted = (mounted: Function[] | Function) => () => {
+    if (mounted) {
+        Array.isArray(mounted) ? mounted.forEach(fn => { fn() }) : mounted();
+    }
     document.dispatchEvent(new Event('mounted'));
 };
 
 export const Prerender = (component: any): any => {
-    const { mounted } = component.options;
-    component.options.mounted = mounted
-        ? Array.isArray(mounted)
-            ? [...mounted, mountedDispatcher]
-            : [mounted, mountedDispatcher]
-        : [mountedDispatcher];
+    if (component.options) {
+        const { mounted } = component.options;
+        component.options.mounted = [createMounted(mounted)];
+    }
     return component;
 }
