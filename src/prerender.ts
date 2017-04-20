@@ -9,6 +9,6 @@ export const Prerender = (component: any): any => {
         ? Array.isArray(mounted)
             ? [...mounted, mountedDispatcher]
             : [mounted, mountedDispatcher]
-        : mountedDispatcher;
+        : [mountedDispatcher];
     return component;
 }
