@@ -1,15 +1,11 @@
 // Preredner Decorator
-const createMounted = (mounted: Function[] | Function) => () => {
-    if (mounted) {
-        Array.isArray(mounted) ? mounted.forEach(fn => { fn() }) : mounted();
-    }
-    document.dispatchEvent(new Event('mounted'));
-};
+import Vue from 'vue'
+export type VueClass = { new (): Vue } & typeof Vue
 
-export const Prerender = (component: any): any => {
-    if (component.options) {
-        const { mounted } = component.options;
-        component.options.mounted = [createMounted(mounted)];
-    }
-    return component;
+export const Prerender = (component: VueClass): VueClass => {
+    return component.extend({
+        mounted: function() {
+            document.dispatchEvent(new Event('mounted'));
+        }
+    });
 }
