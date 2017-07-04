@@ -10,13 +10,24 @@ he@^1.1.0:
   version "1.1.1"
   resolved "http://r.npm.sankuai.com/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+reflect-metadata@^0.1.9:
+  version "0.1.10"
+  resolved "http://r.npm.sankuai.com/reflect-metadata/download/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
+
 typescript@^2.2.2:
   version "2.2.2"
   resolved "http://r.npm.sankuai.com/typescript/download/typescript-2.2.2.tgz#606022508479b55ffa368b58fee963a03dfd7b0c"
 
-vue-class-component@^5.0.1:
+vue-class-component@^5.0.0, vue-class-component@^5.0.1:
   version "5.0.1"
   resolved "http://r.npm.sankuai.com/vue-class-component/download/vue-class-component-5.0.1.tgz#feda06c3da266cee9064e224ba491e089923dce8"
+
+vue-property-decorator@^5.1.0:
+  version "5.1.0"
+  resolved "http://r.npm.sankuai.com/vue-property-decorator/download/vue-property-decorator-5.1.0.tgz#4e83f1527b4fef52a627ce5f3968e02cf47ca01c"
+  dependencies:
+    reflect-metadata "^0.1.9"
+    vue-class-component "^5.0.0"
 
 vue-render-loader@^1.1.1:
   version "1.1.1"

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import ClassDecorator, { createDecorator } from 'vue-class-component';
 import { VueClass, WatchOptions, ComponentOptions } from './declare';
+import { Inject, Provide, Model, Prop, Watch } from 'vue-property-decorator';
 
 // register vue-router hooks
 ClassDecorator.registerHooks([
@@ -27,14 +28,5 @@ const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueC
     };
 };
 
-// Watch Decorator
-const Watch = (path: string, watchOptions: WatchOptions = {}): MethodDecorator => {
-    const { deep, immediate } = watchOptions;
-    return createDecorator((options: Vue.ComponentOptions<Vue>, handler: string): void => {
-        options.watch = options.watch || {};
-        (<any>options.watch)[path] = { handler, deep, immediate };
-    });
-};
-
-export { Vue, Component, Watch };
+export { Vue, Component, Watch, Inject, Provide, Model, Prop };
 export * from './prerender';
