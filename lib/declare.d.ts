@@ -1,9 +1,8 @@
-import Vue from 'vue';
-export interface ComponentOptions<V extends Vue> extends Vue.ComponentOptions<V> {
-    name?: string;
+import Vue, { ComponentOptions, WatchOptions } from 'vue';
+export interface ComponentOptions<V extends Vue> extends ComponentOptions<V, any, any, any> {
     render?: any;
 }
-export interface WatchOptions extends Vue.WatchOptions {
+export interface WatchOptions extends WatchOptions {
 }
 export declare type VueClass = {
     new (): Vue;

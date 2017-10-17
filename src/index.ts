@@ -9,7 +9,7 @@ ClassDecorator.registerHooks([
 ]);
 
 // Component Decorator
-const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueClass>(component: V) => V => {
+const Component = <U extends Vue>(options: ComponentOptions<U>): (component: VueClass) => VueClass => {
     return (component: VueClass): VueClass => {
         const { render } = options;
         if (typeof render === 'object') {
@@ -30,7 +30,7 @@ const Component = <U extends Vue>(options: ComponentOptions<U>): <V extends VueC
 // Watch Decorator
 const Watch = (path: string, watchOptions: WatchOptions = {}): MethodDecorator => {
     const { deep, immediate } = watchOptions;
-    return createDecorator((options: Vue.ComponentOptions<Vue>, handler: string): void => {
+    return createDecorator((options: ComponentOptions<Vue>, handler: string): void => {
         options.watch = options.watch || {};
         (<any>options.watch)[path] = { handler, deep, immediate };
     });
