@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import ClassDecorator, { createDecorator } from 'vue-class-component';
+import ClassDecorator, { createDecorator, mixins } from 'vue-class-component';
 import { VueClass, WatchOptions, ComponentOptions } from './declare';
 
 // register vue-router hooks
@@ -36,5 +36,5 @@ const Watch = (path: string, watchOptions: WatchOptions = {}): MethodDecorator =
     });
 };
 
-export { Vue, Component, Watch };
+export { Vue, Component, Watch, mixins };
 export * from './prerender';
